@@ -16,22 +16,22 @@
   <meta name="author" content="康钦瑞">
   <meta name="keywords" content="">
   
-    <meta name="description" content="axios二次封装建议封装格式api ​	base.js ​	request.js axios二次封装1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950import &amp;#123; baseUrl &amp;#125; from &quot;.&#x2F;base&quot;import">
+    <meta name="description" content="tinyMce6下载vue版本的tinymce-6tingymce配置项   名称 作用    height 设置高度   language 语言   language_url 语言地址   plugins 插件   toolbar 菜单栏   images_upload_url 默认图片上传地址   images_upload_handler 自定义图片上传函数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="axios二次封装">
-<meta property="og:url" content="http://example.com/post/axios%E4%BA%8C%E6%AC%A1%E5%B0%81%E8%A3%85.html">
+<meta property="og:title" content="tinyMce 6">
+<meta property="og:url" content="http://example.com/post/tinyMce.html">
 <meta property="og:site_name" content="康钦瑞的博客">
-<meta property="og:description" content="axios二次封装建议封装格式api ​	base.js ​	request.js axios二次封装1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950import &amp;#123; baseUrl &amp;#125; from &quot;.&#x2F;base&quot;import">
+<meta property="og:description" content="tinyMce6下载vue版本的tinymce-6tingymce配置项   名称 作用    height 设置高度   language 语言   language_url 语言地址   plugins 插件   toolbar 菜单栏   images_upload_url 默认图片上传地址   images_upload_handler 自定义图片上传函数">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-25T08:21:16.668Z">
-<meta property="article:modified_time" content="2023-03-03T07:05:40.040Z">
+<meta property="article:published_time" content="2023-03-01T07:35:41.000Z">
+<meta property="article:modified_time" content="2023-03-03T05:30:50.536Z">
 <meta property="article:author" content="康钦瑞">
-<meta property="article:tag" content="vue">
+<meta property="article:tag" content="富文本编辑器">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>axios二次封装 - 康钦瑞的博客</title>
+  <title>tinyMce 6 - 康钦瑞的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -185,7 +185,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="axios二次封装"></span>
+            <span id="subtitle" data-typed-text="tinyMce 6"></span>
           
         </div>
 
@@ -196,8 +196,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-25 16:21" pubdate>
-          February 25, 2023 pm
+        <time datetime="2023-03-01 15:35" pubdate>
+          March 1, 2023 pm
         </time>
       </span>
     
@@ -208,7 +208,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k words
+          1.3k words
         
       </span>
     
@@ -219,7 +219,7 @@
         
         
         
-          10 mins
+          11 mins
         
       </span>
     
@@ -257,17 +257,78 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">axios二次封装</h1>
+            <h1 style="display: none">tinyMce 6</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="axios二次封装"><a href="#axios二次封装" class="headerlink" title="axios二次封装"></a>axios二次封装</h1><h2 id="建议封装格式"><a href="#建议封装格式" class="headerlink" title="建议封装格式"></a>建议封装格式</h2><p>api</p>
-<p>​	base.js</p>
-<p>​	request.js</p>
-<h2 id="axios二次封装-1"><a href="#axios二次封装-1" class="headerlink" title="axios二次封装"></a>axios二次封装</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> &#123; baseUrl &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./base&quot;</span><br><span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;axios&quot;</span><br><span class="hljs-comment">//导入其他，如：import &#123; ElLoading &#125; from &#x27;element-plus&#x27;</span><br><br><span class="hljs-comment">//使用axios配置式语法，进行axios请求</span><br><span class="hljs-keyword">const</span> axiosBase = axios.<span class="hljs-title function_">create</span>(&#123;<br>  <span class="hljs-attr">baseURL</span>: baseUrl,<br>  <span class="hljs-attr">timeout</span>: <span class="hljs-number">2000</span>,<br>&#125;)<br><br><span class="hljs-string">`第一次封装axios：完成axios请求工作`</span><br><span class="hljs-comment">//传入url，请求方式，请求携带参数</span><br><span class="hljs-keyword">const</span> <span class="hljs-title function_">axiosFun</span> = (<span class="hljs-params">url, method, data</span>)=&gt; &#123;<br>  <span class="hljs-keyword">let</span> axiosObj = &#123;<br>    <span class="hljs-attr">url</span>: baseUrl + url,<br>    <span class="hljs-attr">method</span>: method,<br>  &#125;<br>  <span class="hljs-keyword">switch</span> (method) &#123;<br>    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;POST&quot;</span>:<br>    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;PUT&quot;</span>:<br>      axiosObj.<span class="hljs-property">data</span> = data<br>      <span class="hljs-keyword">break</span><br>    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;GET&quot;</span>:<br>    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;DELETE&quot;</span>:<br>      axiosObj.<span class="hljs-property">params</span> = data<br>      <span class="hljs-keyword">break</span><br>  &#125;<br>  <span class="hljs-comment">//进行axios请求</span><br>  <span class="hljs-keyword">return</span> <span class="hljs-title function_">axiosBase</span>(axiosObj)<br>&#125;<br><br><span class="hljs-string">`第二次封装axios：请求前后的loading...以及其他封装`</span><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">axiosHelper</span> = (<span class="hljs-params">url, method, data</span>) =&gt; &#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve,reject</span>)=&gt;</span>&#123;<br>        <span class="hljs-comment">//在此处封装请求接口前操作：loading效果...</span><br><br>        <span class="hljs-title function_">axiosFun</span>(url, method, data).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>)=&gt;</span>&#123;    <br>            <span class="hljs-keyword">if</span>(...)&#123;<br>               <span class="hljs-comment">//在此处封装请求接口后操作：loading效果关闭...</span><br>               <br>               <span class="hljs-comment">//请求成功</span><br>               resolve res<br>            &#125;<span class="hljs-keyword">else</span>&#123;<br>               <span class="hljs-comment">//请求失败</span><br>               reject res<br>            &#125;          <br>        &#125;)       <br>    &#125;)<br>&#125;<br><br></code></pre></td></tr></table></figure>
+                <h1 id="tinyMce6"><a href="#tinyMce6" class="headerlink" title="tinyMce6"></a>tinyMce6</h1><h2 id="下载vue版本的tinymce-6"><a href="#下载vue版本的tinymce-6" class="headerlink" title="下载vue版本的tinymce-6"></a>下载vue版本的tinymce-6</h2><h2 id="tingymce配置项"><a href="#tingymce配置项" class="headerlink" title="tingymce配置项"></a>tingymce配置项</h2><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>height</td>
+<td>设置高度</td>
+</tr>
+<tr>
+<td>language</td>
+<td>语言</td>
+</tr>
+<tr>
+<td>language_url</td>
+<td>语言地址</td>
+</tr>
+<tr>
+<td>plugins</td>
+<td>插件</td>
+</tr>
+<tr>
+<td>toolbar</td>
+<td>菜单栏</td>
+</tr>
+<tr>
+<td>images_upload_url</td>
+<td>默认图片上传地址</td>
+</tr>
+<tr>
+<td>images_upload_handler</td>
+<td>自定义图片上传函数</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h2><h3 id="默认上传"><a href="#默认上传" class="headerlink" title="默认上传"></a>默认上传</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-attr">images_upload_url</span>: <span class="hljs-string">&#x27;...&#x27;</span>,<br></code></pre></td></tr></table></figure>
 
-<h2 id="二次封装的使用"><a href="#二次封装的使用" class="headerlink" title="二次封装的使用"></a>二次封装的使用</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//封装接口函数</span><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">$fitch_article</span> = <br>      data =&gt; <span class="hljs-title function_">axiosHelper</span>(<span class="hljs-string">&quot;api/articleInfo&quot;</span>, <span class="hljs-string">&quot;POST&quot;</span>, data)<br>.<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> &#123;<br>    <br>&#125;)<br><br></code></pre></td></tr></table></figure>
+
+
+<h3 id="自定义上传-6版本"><a href="#自定义上传-6版本" class="headerlink" title="自定义上传(6版本)"></a>自定义上传(6版本)</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-string">`需要将其封装在promise中，返回promise`</span><br><span class="hljs-attr">images_upload_handler</span>: <span class="hljs-function">(<span class="hljs-params">blobInfo, progress</span>) =&gt;</span> &#123;<br>      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> &#123;<br>          <span class="hljs-comment">//使用元素ajax发送请求，也可以改为封装的axios等请求</span><br>        <span class="hljs-keyword">const</span> xmlRequest = <span class="hljs-keyword">new</span> <span class="hljs-title class_">XMLHttpRequest</span>()<br>        <span class="hljs-keyword">const</span> formData = <span class="hljs-keyword">new</span> <span class="hljs-title class_">FormData</span>()<br><br>        <span class="hljs-comment">//xmlRequest.withCredentials = false</span><br>        xmlRequest.<span class="hljs-title function_">open</span>(<span class="hljs-string">&quot;POST&quot;</span>, <span class="hljs-string">&quot;url&quot;</span>)<br><br>        <span class="hljs-comment">//xmlRequest.upload.onprogress = (e) =&gt; &#123;</span><br>        <span class="hljs-comment">//  progress((e.loaded / e.total) * 100)</span><br>        <span class="hljs-comment">//&#125;</span><br><br>          <br>        xmlRequest.<span class="hljs-property">onload</span> = <span class="hljs-function">() =&gt;</span> &#123;<br>          <span class="hljs-keyword">if</span> (xmlRequest.<span class="hljs-property">status</span> == <span class="hljs-number">200</span>) &#123;<br>            <span class="hljs-keyword">const</span> response = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(xmlRequest.<span class="hljs-property">response</span>)<br>            <span class="hljs-comment">// my issue was here: a string is expected</span><br>            <span class="hljs-comment">// null value will result in the reported error</span><br>            <span class="hljs-title function_">resolve</span>(baseUrl + response.<span class="hljs-property">data</span>)<br>          &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-title function_">reject</span>(<span class="hljs-string">&quot;HTTP Error: &quot;</span> + xmlRequest.<span class="hljs-property">status</span>)<br>          &#125;<br>        &#125;<br><br>        <span class="hljs-comment">//错误提示</span><br>        xmlRequest.<span class="hljs-property">onerror</span> = <span class="hljs-function">() =&gt;</span> &#123;<br>          <span class="hljs-title function_">reject</span>(<span class="hljs-string">&quot;Image upload failed due to a XHR Transport error. Code: &quot;</span> + xmlRequest.<span class="hljs-property">status</span>)<br>        &#125;<br> <br>        formData.<span class="hljs-title function_">append</span>(<span class="hljs-string">&quot;file&quot;</span>, blobInfo.<span class="hljs-title function_">blob</span>(), blobInfo.<span class="hljs-title function_">filename</span>())<br>        <span class="hljs-comment">//formData.append(&quot;image&quot;, blobInfo.blob())</span><br>        <span class="hljs-comment">//formData.append(&quot;title&quot;, blobInfo.filename())</span><br>        xmlRequest.<span class="hljs-title function_">send</span>(formData)<br>      &#125;)<br>    &#125;,<br></code></pre></td></tr></table></figure>
+
+
 
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
@@ -287,7 +348,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/vue/" class="category-chain-item">vue</a>
+  <a href="/categories/tinyMce/" class="category-chain-item">tinyMce</a>
   
   
 
@@ -302,7 +363,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/vue/">#vue</a>
+        <a href="/tags/%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/">#富文本编辑器</a>
       
     </div>
   
@@ -314,8 +375,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>axios二次封装</div>
-      <div>http://example.com/post/axios二次封装.html</div>
+      <div>tinyMce 6</div>
+      <div>http://example.com/post/tinyMce.html</div>
     </div>
     <div class="license-meta">
       
@@ -327,7 +388,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>February 25, 2023</div>
+          <div>March 1, 2023</div>
         </div>
       
       
@@ -359,9 +420,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/post/uni-app.html" title="uni-app">
+                      <a href="/post/%E5%B0%81%E8%A3%85%E7%9A%84vue%E7%BB%84%E4%BB%B6.html" title="封装的vue组件">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">uni-app</span>
+                        <span class="hidden-mobile">封装的vue组件</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -369,8 +430,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/post/element.html" title="element的使用">
-                        <span class="hidden-mobile">element的使用</span>
+                      <a href="/post/uni-app.html" title="uni-app">
+                        <span class="hidden-mobile">uni-app</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

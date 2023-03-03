@@ -16,22 +16,21 @@
   <meta name="author" content="康钦瑞">
   <meta name="keywords" content="">
   
-    <meta name="description" content="axios二次封装建议封装格式api ​	base.js ​	request.js axios二次封装1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950import &amp;#123; baseUrl &amp;#125; from &quot;.&#x2F;base&quot;import">
+    <meta name="description" content="uni-appuni-app组件封装radiocheckBoxJOSN转化BUG跳转页面时，需要将对象类型的数据详情一起传过去，另一个页面来显示。但是由于有对象中有url 12345&#x2F;&#x2F;传值let newData &#x3D; JSON.stringify(data);wx.navigateTo(&amp;#123;    url: &#96;...?data&#x3D;&#96; + encodeURIComponent(newData)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="axios二次封装">
-<meta property="og:url" content="http://example.com/post/axios%E4%BA%8C%E6%AC%A1%E5%B0%81%E8%A3%85.html">
+<meta property="og:title" content="uni-app">
+<meta property="og:url" content="http://example.com/post/uni-app.html">
 <meta property="og:site_name" content="康钦瑞的博客">
-<meta property="og:description" content="axios二次封装建议封装格式api ​	base.js ​	request.js axios二次封装1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950import &amp;#123; baseUrl &amp;#125; from &quot;.&#x2F;base&quot;import">
+<meta property="og:description" content="uni-appuni-app组件封装radiocheckBoxJOSN转化BUG跳转页面时，需要将对象类型的数据详情一起传过去，另一个页面来显示。但是由于有对象中有url 12345&#x2F;&#x2F;传值let newData &#x3D; JSON.stringify(data);wx.navigateTo(&amp;#123;    url: &#96;...?data&#x3D;&#96; + encodeURIComponent(newData)">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-25T08:21:16.668Z">
-<meta property="article:modified_time" content="2023-03-03T07:05:40.040Z">
+<meta property="article:published_time" content="2023-02-28T01:35:41.000Z">
+<meta property="article:modified_time" content="2023-03-01T03:33:54.753Z">
 <meta property="article:author" content="康钦瑞">
-<meta property="article:tag" content="vue">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>axios二次封装 - 康钦瑞的博客</title>
+  <title>uni-app - 康钦瑞的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -185,7 +184,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="axios二次封装"></span>
+            <span id="subtitle" data-typed-text="uni-app"></span>
           
         </div>
 
@@ -196,8 +195,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-25 16:21" pubdate>
-          February 25, 2023 pm
+        <time datetime="2023-02-28 09:35" pubdate>
+          February 28, 2023 am
         </time>
       </span>
     
@@ -208,7 +207,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k words
+          283 words
         
       </span>
     
@@ -219,7 +218,7 @@
         
         
         
-          10 mins
+          3 mins
         
       </span>
     
@@ -257,17 +256,19 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">axios二次封装</h1>
+            <h1 style="display: none">uni-app</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="axios二次封装"><a href="#axios二次封装" class="headerlink" title="axios二次封装"></a>axios二次封装</h1><h2 id="建议封装格式"><a href="#建议封装格式" class="headerlink" title="建议封装格式"></a>建议封装格式</h2><p>api</p>
-<p>​	base.js</p>
-<p>​	request.js</p>
-<h2 id="axios二次封装-1"><a href="#axios二次封装-1" class="headerlink" title="axios二次封装"></a>axios二次封装</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> &#123; baseUrl &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./base&quot;</span><br><span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;axios&quot;</span><br><span class="hljs-comment">//导入其他，如：import &#123; ElLoading &#125; from &#x27;element-plus&#x27;</span><br><br><span class="hljs-comment">//使用axios配置式语法，进行axios请求</span><br><span class="hljs-keyword">const</span> axiosBase = axios.<span class="hljs-title function_">create</span>(&#123;<br>  <span class="hljs-attr">baseURL</span>: baseUrl,<br>  <span class="hljs-attr">timeout</span>: <span class="hljs-number">2000</span>,<br>&#125;)<br><br><span class="hljs-string">`第一次封装axios：完成axios请求工作`</span><br><span class="hljs-comment">//传入url，请求方式，请求携带参数</span><br><span class="hljs-keyword">const</span> <span class="hljs-title function_">axiosFun</span> = (<span class="hljs-params">url, method, data</span>)=&gt; &#123;<br>  <span class="hljs-keyword">let</span> axiosObj = &#123;<br>    <span class="hljs-attr">url</span>: baseUrl + url,<br>    <span class="hljs-attr">method</span>: method,<br>  &#125;<br>  <span class="hljs-keyword">switch</span> (method) &#123;<br>    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;POST&quot;</span>:<br>    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;PUT&quot;</span>:<br>      axiosObj.<span class="hljs-property">data</span> = data<br>      <span class="hljs-keyword">break</span><br>    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;GET&quot;</span>:<br>    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;DELETE&quot;</span>:<br>      axiosObj.<span class="hljs-property">params</span> = data<br>      <span class="hljs-keyword">break</span><br>  &#125;<br>  <span class="hljs-comment">//进行axios请求</span><br>  <span class="hljs-keyword">return</span> <span class="hljs-title function_">axiosBase</span>(axiosObj)<br>&#125;<br><br><span class="hljs-string">`第二次封装axios：请求前后的loading...以及其他封装`</span><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">axiosHelper</span> = (<span class="hljs-params">url, method, data</span>) =&gt; &#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve,reject</span>)=&gt;</span>&#123;<br>        <span class="hljs-comment">//在此处封装请求接口前操作：loading效果...</span><br><br>        <span class="hljs-title function_">axiosFun</span>(url, method, data).<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>)=&gt;</span>&#123;    <br>            <span class="hljs-keyword">if</span>(...)&#123;<br>               <span class="hljs-comment">//在此处封装请求接口后操作：loading效果关闭...</span><br>               <br>               <span class="hljs-comment">//请求成功</span><br>               resolve res<br>            &#125;<span class="hljs-keyword">else</span>&#123;<br>               <span class="hljs-comment">//请求失败</span><br>               reject res<br>            &#125;          <br>        &#125;)       <br>    &#125;)<br>&#125;<br><br></code></pre></td></tr></table></figure>
+                <h1 id="uni-app"><a href="#uni-app" class="headerlink" title="uni-app"></a>uni-app</h1><h2 id="uni-app组件封装"><a href="#uni-app组件封装" class="headerlink" title="uni-app组件封装"></a>uni-app组件封装</h2><h3 id="radio"><a href="#radio" class="headerlink" title="radio"></a>radio</h3><h3 id="checkBox"><a href="#checkBox" class="headerlink" title="checkBox"></a>checkBox</h3><h2 id="JOSN转化BUG"><a href="#JOSN转化BUG" class="headerlink" title="JOSN转化BUG"></a>JOSN转化BUG</h2><p>跳转页面时，需要将对象类型的数据详情一起传过去，另一个页面来显示。但是由于有对象中有url</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//传值</span><br><span class="hljs-keyword">let</span> newData = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(data);<br>wx.<span class="hljs-title function_">navigateTo</span>(&#123;<br>    <span class="hljs-attr">url</span>: <span class="hljs-string">`...?data=`</span> + <span class="hljs-built_in">encodeURIComponent</span>(newData),<br>&#125;)<br></code></pre></td></tr></table></figure>
 
-<h2 id="二次封装的使用"><a href="#二次封装的使用" class="headerlink" title="二次封装的使用"></a>二次封装的使用</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//封装接口函数</span><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">$fitch_article</span> = <br>      data =&gt; <span class="hljs-title function_">axiosHelper</span>(<span class="hljs-string">&quot;api/articleInfo&quot;</span>, <span class="hljs-string">&quot;POST&quot;</span>, data)<br>.<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> &#123;<br>    <br>&#125;)<br><br></code></pre></td></tr></table></figure>
+
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//接收</span><br><span class="hljs-title function_">onLoad</span>(<span class="hljs-params">option</span>) &#123;<br>    <span class="hljs-keyword">let</span> data = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(<span class="hljs-built_in">decodeURIComponent</span>(option.<span class="hljs-property">data</span>))<br>&#125;,<br></code></pre></td></tr></table></figure>
+
+
 
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
@@ -287,7 +288,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/vue/" class="category-chain-item">vue</a>
+  <a href="/categories/uni-app/" class="category-chain-item">uni-app</a>
   
   
 
@@ -299,13 +300,6 @@
     </div>
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/vue/">#vue</a>
-      
-    </div>
-  
 </div>
 
 
@@ -314,8 +308,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>axios二次封装</div>
-      <div>http://example.com/post/axios二次封装.html</div>
+      <div>uni-app</div>
+      <div>http://example.com/post/uni-app.html</div>
     </div>
     <div class="license-meta">
       
@@ -327,7 +321,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>February 25, 2023</div>
+          <div>February 28, 2023</div>
         </div>
       
       
@@ -359,9 +353,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/post/uni-app.html" title="uni-app">
+                      <a href="/post/tinyMce.html" title="tinyMce 6">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">uni-app</span>
+                        <span class="hidden-mobile">tinyMce 6</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -369,8 +363,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/post/element.html" title="element的使用">
-                        <span class="hidden-mobile">element的使用</span>
+                      <a href="/post/axios%E4%BA%8C%E6%AC%A1%E5%B0%81%E8%A3%85.html" title="axios二次封装">
+                        <span class="hidden-mobile">axios二次封装</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
