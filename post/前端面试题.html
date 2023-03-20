@@ -16,22 +16,21 @@
   <meta name="author" content="康钦瑞">
   <meta name="keywords" content="">
   
-    <meta name="description" content="JS常用APIjs字符串常用apihttps:&#x2F;&#x2F;github.com&#x2F;kangqr&#x2F;kangqr.github.io resource文件—js下    方法名 作用    str.indexOf(x) x字符在字符串的首个位置的下标   str.concant(x) 连接str和x字符为一个新的字符串   str.charAt(2) 查找第2个下标的字符串   str.includes(x)">
+    <meta name="description" content="前端面试题JSjs数据类型字符串常用函数数组、对象常用函数浅拷贝与深拷贝为什么要深拷贝： 事件冒泡原型链微任务与宏任务vueMVVM生命周期   name 作用时间段    beforeCreate 组件创建前   created 组件创建时   beforeMounte 组件挂载前   mounted 组件挂载时   beforeUpdate 组件修改前   updated 组件修改时   be">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS常用api">
-<meta property="og:url" content="http://example.com/post/js.html">
+<meta property="og:title" content="前端面试题">
+<meta property="og:url" content="http://example.com/post/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98.html">
 <meta property="og:site_name" content="康钦瑞的博客">
-<meta property="og:description" content="JS常用APIjs字符串常用apihttps:&#x2F;&#x2F;github.com&#x2F;kangqr&#x2F;kangqr.github.io resource文件—js下    方法名 作用    str.indexOf(x) x字符在字符串的首个位置的下标   str.concant(x) 连接str和x字符为一个新的字符串   str.charAt(2) 查找第2个下标的字符串   str.includes(x)">
+<meta property="og:description" content="前端面试题JSjs数据类型字符串常用函数数组、对象常用函数浅拷贝与深拷贝为什么要深拷贝： 事件冒泡原型链微任务与宏任务vueMVVM生命周期   name 作用时间段    beforeCreate 组件创建前   created 组件创建时   beforeMounte 组件挂载前   mounted 组件挂载时   beforeUpdate 组件修改前   updated 组件修改时   be">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-24T01:35:41.000Z">
-<meta property="article:modified_time" content="2023-03-12T06:25:36.178Z">
+<meta property="article:published_time" content="2023-03-04T01:00:00.000Z">
+<meta property="article:modified_time" content="2023-03-12T06:17:33.803Z">
 <meta property="article:author" content="康钦瑞">
-<meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>JS常用api - 康钦瑞的博客</title>
+  <title>前端面试题 - 康钦瑞的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -179,13 +178,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/bg-01.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="JS常用api"></span>
+            <span id="subtitle" data-typed-text="前端面试题"></span>
           
         </div>
 
@@ -196,8 +195,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-24 09:35" pubdate>
-          February 24, 2023 am
+        <time datetime="2023-03-04 09:00" pubdate>
+          March 4, 2023 am
         </time>
       </span>
     
@@ -208,7 +207,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          537 words
+          476 words
         
       </span>
     
@@ -219,7 +218,7 @@
         
         
         
-          5 mins
+          4 mins
         
       </span>
     
@@ -257,114 +256,67 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">JS常用api</h1>
+            <h1 style="display: none">前端面试题</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="JS常用API"><a href="#JS常用API" class="headerlink" title="JS常用API"></a>JS常用API</h1><h2 id="js字符串常用api"><a href="#js字符串常用api" class="headerlink" title="js字符串常用api"></a>js字符串常用api</h2><p><a target="_blank" rel="noopener" href="https://github.com/kangqr/kangqr.github.io">https://github.com/kangqr/kangqr.github.io</a></p>
-<p>resource文件—js下</p>
-<table>
+                <h1 id="前端面试题"><a href="#前端面试题" class="headerlink" title="前端面试题"></a>前端面试题</h1><h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><h3 id="js数据类型"><a href="#js数据类型" class="headerlink" title="js数据类型"></a>js数据类型</h3><h3 id="字符串常用函数"><a href="#字符串常用函数" class="headerlink" title="字符串常用函数"></a>字符串常用函数</h3><h3 id="数组、对象常用函数"><a href="#数组、对象常用函数" class="headerlink" title="数组、对象常用函数"></a>数组、对象常用函数</h3><h3 id="浅拷贝与深拷贝"><a href="#浅拷贝与深拷贝" class="headerlink" title="浅拷贝与深拷贝"></a>浅拷贝与深拷贝</h3><p>为什么要深拷贝：</p>
+<h3 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h3><h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><h3 id="微任务与宏任务"><a href="#微任务与宏任务" class="headerlink" title="微任务与宏任务"></a>微任务与宏任务</h3><h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><h3 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h3><h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><table>
 <thead>
 <tr>
-<th>方法名</th>
-<th>作用</th>
+<th>name</th>
+<th>作用时间段</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>str.indexOf(x)</td>
-<td>x字符在字符串的首个位置的下标</td>
+<td>beforeCreate</td>
+<td>组件创建前</td>
 </tr>
 <tr>
-<td>str.concant(x)</td>
-<td>连接str和x字符为一个新的字符串</td>
+<td>created</td>
+<td>组件创建时</td>
 </tr>
 <tr>
-<td>str.charAt(2)</td>
-<td>查找第2个下标的字符串</td>
+<td>beforeMounte</td>
+<td>组件挂载前</td>
 </tr>
 <tr>
-<td>str.includes(x)</td>
-<td>判断str字符中是否包含x字符</td>
+<td>mounted</td>
+<td>组件挂载时</td>
 </tr>
 <tr>
-<td>str.slice(start,end)</td>
-<td>截取从start下标到end下标的字符串</td>
+<td>beforeUpdate</td>
+<td>组件修改前</td>
 </tr>
 <tr>
-<td>str.split(x)</td>
-<td>以x为分隔符，将str分割为数组</td>
+<td>updated</td>
+<td>组件修改时</td>
 </tr>
 <tr>
-<td>str.replace(x，y)</td>
-<td>将str字符串中的x字符替换为y字符</td>
+<td>beforeDestory</td>
+<td>组件销毁前</td>
 </tr>
 <tr>
-<td>str.trim()</td>
-<td>去除字符串两侧空格</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
+<td>destory</td>
+<td>组件销毁时</td>
 </tr>
 </tbody></table>
-<h2 id="js数组、对象常用api"><a href="#js数组、对象常用api" class="headerlink" title="js数组、对象常用api"></a>js数组、对象常用api</h2><p><a target="_blank" rel="noopener" href="https://github.com/kangqr/kangqr.github.io">https://github.com/kangqr/kangqr.github.io</a></p>
-<p>resource文件—js下</p>
-<table>
-<thead>
-<tr>
-<th align="left">方法名</th>
-<th>作用</th>
-<th>返回值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">arr.push()</td>
-<td>在arr末尾插入元素</td>
-<td>无</td>
-</tr>
-<tr>
-<td align="left">arr.pop()</td>
-<td>删除在arr末尾元素</td>
-<td>删除的元素</td>
-</tr>
-<tr>
-<td align="left">arr.unshift()</td>
-<td>在arr首位插入元素</td>
-<td>无</td>
-</tr>
-<tr>
-<td align="left">arr.shift()</td>
-<td>删除在arr首位元素</td>
-<td>删除的元素</td>
-</tr>
-<tr>
-<td align="left">arr.forEach(()&#x3D;&gt;{})</td>
-<td>循环arr中的每一个元素，不可break</td>
-<td>return</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td align="left"></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td align="left"></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td align="left"></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+<h3 id="watch和computed"><a href="#watch和computed" class="headerlink" title="watch和computed"></a>watch和computed</h3><h3 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h3><h4 id="全局路由"><a href="#全局路由" class="headerlink" title="全局路由"></a>全局路由</h4><p>全局前置路由：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js">router.<span class="hljs-title function_">beforeEach</span>(<span class="hljs-function">(<span class="hljs-params">to,<span class="hljs-keyword">from</span>,next</span>)=&gt;</span>&#123;<br>    <br>&#125;)<br></code></pre></td></tr></table></figure>
+
+<p>全局后置路由</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js">router.<span class="hljs-title function_">afterEach</span>(<span class="hljs-function">(<span class="hljs-params">to,<span class="hljs-keyword">from</span>,,fail</span>) =&gt;</span> &#123;<br>    <br>&#125;)<br></code></pre></td></tr></table></figure>
+
+<h4 id="独享路由-定义在路由中"><a href="#独享路由-定义在路由中" class="headerlink" title="独享路由(定义在路由中)"></a>独享路由(定义在路由中)</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-attr">beforeEnter</span>:（to,<span class="hljs-keyword">from</span>）=&gt;&#123;<br>	<span class="hljs-keyword">return</span> <span class="hljs-literal">false</span> || <span class="hljs-literal">true</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="组件间传值"><a href="#组件间传值" class="headerlink" title="组件间传值"></a>组件间传值</h3><h4 id="父传子-defineProps"><a href="#父传子-defineProps" class="headerlink" title="父传子(defineProps)"></a>父传子(defineProps)</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//</span><br>&lt;xxx &gt; &lt;/xxx&gt;<br>:list=<span class="hljs-string">&quot;&quot;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="axios"><a href="#axios" class="headerlink" title="axios"></a>axios</h3><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
               </div>
             
@@ -382,7 +334,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/js/" class="category-chain-item">js</a>
+  <a href="/categories/%E5%89%8D%E7%AB%AF/" class="category-chain-item">前端</a>
   
   
 
@@ -394,13 +346,6 @@
     </div>
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/js/">#js</a>
-      
-    </div>
-  
 </div>
 
 
@@ -409,8 +354,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>JS常用api</div>
-      <div>http://example.com/post/js.html</div>
+      <div>前端面试题</div>
+      <div>http://example.com/post/前端面试题.html</div>
     </div>
     <div class="license-meta">
       
@@ -422,7 +367,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>February 24, 2023</div>
+          <div>March 4, 2023</div>
         </div>
       
       
@@ -454,9 +399,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/post/element.html" title="element的使用">
+                      <a href="/post/hxd%E7%9A%84%E4%B9%90%E5%AD%90%E8%A1%8C%E4%B8%BA.html" title="乐子">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">element的使用</span>
+                        <span class="hidden-mobile">乐子</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -464,8 +409,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/post/vue3%E5%9F%BA%E7%A1%80.html" title="vue3基础">
-                        <span class="hidden-mobile">vue3基础</span>
+                      <a href="/post/uni-app%E5%B0%81%E8%A3%85%E7%9A%84%E7%BB%84%E4%BB%B6.html" title="uni-app封装的组件">
+                        <span class="hidden-mobile">uni-app封装的组件</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

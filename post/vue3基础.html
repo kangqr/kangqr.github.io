@@ -16,15 +16,15 @@
   <meta name="author" content="康钦瑞">
   <meta name="keywords" content="">
   
-    <meta name="description" content="[TOC] Vue3知识点总汇https:&#x2F;&#x2F;github.com&#x2F;kangqr&#x2F;kangqr.github.io resource文件—vue下 生命周期   name     beforeCreate    created    beforeMounte    mounted    beforeUpdate    updated    beforeDestory    destory    基">
+    <meta name="description" content="[TOC] Vue3知识点总汇https:&#x2F;&#x2F;github.com&#x2F;kangqr&#x2F;kangqr.github.io resource文件—vue下 基础问题任意4个钩子函数.页面首次加载过程中, 会依次触发的钩子函数. Vue实例中的 data 属性, 在哪些钩子中能访问? 对一个响应式变量赋值, 最好在钩子函数 updated 中.  X 数据驱动页面是异步还是同步？ ​	同步：一条线走到底 ​">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue3基础">
 <meta property="og:url" content="http://example.com/post/vue3%E5%9F%BA%E7%A1%80.html">
 <meta property="og:site_name" content="康钦瑞的博客">
-<meta property="og:description" content="[TOC] Vue3知识点总汇https:&#x2F;&#x2F;github.com&#x2F;kangqr&#x2F;kangqr.github.io resource文件—vue下 生命周期   name     beforeCreate    created    beforeMounte    mounted    beforeUpdate    updated    beforeDestory    destory    基">
+<meta property="og:description" content="[TOC] Vue3知识点总汇https:&#x2F;&#x2F;github.com&#x2F;kangqr&#x2F;kangqr.github.io resource文件—vue下 基础问题任意4个钩子函数.页面首次加载过程中, 会依次触发的钩子函数. Vue实例中的 data 属性, 在哪些钩子中能访问? 对一个响应式变量赋值, 最好在钩子函数 updated 中.  X 数据驱动页面是异步还是同步？ ​	同步：一条线走到底 ​">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-24T01:35:41.000Z">
-<meta property="article:modified_time" content="2023-02-25T09:22:20.508Z">
+<meta property="article:modified_time" content="2023-03-04T15:52:00.777Z">
 <meta property="article:author" content="康钦瑞">
 <meta property="article:tag" content="vue">
 <meta name="twitter:card" content="summary_large_image">
@@ -208,7 +208,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.5k words
+          2.4k words
         
       </span>
     
@@ -265,46 +265,6 @@
                 <h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>[TOC]</p>
 <h1 id="Vue3"><a href="#Vue3" class="headerlink" title="Vue3"></a>Vue3</h1><h2 id="知识点总汇"><a href="#知识点总汇" class="headerlink" title="知识点总汇"></a>知识点总汇</h2><p><a target="_blank" rel="noopener" href="https://github.com/kangqr/kangqr.github.io">https://github.com/kangqr/kangqr.github.io</a></p>
 <p>resource文件—vue下</p>
-<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><table>
-<thead>
-<tr>
-<th>name</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>beforeCreate</td>
-<td></td>
-</tr>
-<tr>
-<td>created</td>
-<td></td>
-</tr>
-<tr>
-<td>beforeMounte</td>
-<td></td>
-</tr>
-<tr>
-<td>mounted</td>
-<td></td>
-</tr>
-<tr>
-<td>beforeUpdate</td>
-<td></td>
-</tr>
-<tr>
-<td>updated</td>
-<td></td>
-</tr>
-<tr>
-<td>beforeDestory</td>
-<td></td>
-</tr>
-<tr>
-<td>destory</td>
-<td></td>
-</tr>
-</tbody></table>
 <h3 id="基础问题"><a href="#基础问题" class="headerlink" title="基础问题"></a>基础问题</h3><p>任意4个钩子函数.<br>页面首次加载过程中, 会依次触发的钩子函数.</p>
 <p>Vue实例中的 data 属性, 在哪些钩子中能访问?</p>
 <p>对一个响应式变量赋值, 最好在钩子函数 updated 中.  X</p>
@@ -350,7 +310,7 @@
 
 
 
-<h2 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h2><p>对于复杂数据类型，使用堆，直接赋值拷贝，会直接将指向堆中的复杂类型数据的地址赋值给该值，修改数据等于直接修改。</p>
+<h2 id="深拷贝方式"><a href="#深拷贝方式" class="headerlink" title="深拷贝方式"></a>深拷贝方式</h2><p>对于复杂数据类型，使用堆，直接赋值拷贝，会直接将指向堆中的复杂类型数据的地址赋值给该值，修改数据等于直接修改。</p>
 <p>使用深拷贝，直接重开一个空间存储数据，修改该值不会影响原值</p>
 <p>深拷贝方式：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//formCopy、form为Object对象</span><br><span class="hljs-comment">//使用JSON数据转换做深拷贝</span><br>formCopy = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(form))<br></code></pre></td></tr></table></figure>
